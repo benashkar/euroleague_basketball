@@ -111,9 +111,14 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD python -c "import requests; print('OK')" || exit 1
 
 # -----------------------------------------------------------------------------
+# Make startup script executable
+# -----------------------------------------------------------------------------
+RUN chmod +x start.sh
+
+# -----------------------------------------------------------------------------
 # Default Command
 # -----------------------------------------------------------------------------
 # This runs when you start the container without specifying a command.
-# For web service deployment, we run the Flask dashboard with gunicorn.
-# For scraping, override with: docker run <image> python daily_scraper.py --recent
-CMD ["gunicorn", "dashboard:app", "--bind", "0.0.0.0:5000"]
+# The startup script runs the scraper first to populate data, then starts gunicorn.
+# For scraping only, override with: docker run <image> python daily_scraper.py --recent
+CMD ["./start.sh"]
