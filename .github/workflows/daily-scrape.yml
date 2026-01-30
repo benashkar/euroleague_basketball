@@ -4,16 +4,6 @@ on:
   schedule:
     - cron: '0 6 * * *'
   workflow_dispatch:
-    inputs:
-      mode:
-        description: 'Scrape mode (recent=last 7 days, today=today only, all=full season)'
-        required: false
-        default: 'recent'
-        type: choice
-        options:
-          - recent
-          - today
-          - all
 
 jobs:
   scrape:
@@ -25,8 +15,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -41,21 +29,12 @@ jobs:
 
       - name: Run daily scraper
         run: |
-          # Use input mode if manually triggered, otherwise use 'recent'
-          MODE="${{ github.event.inputs.mode || 'recent' }}"
-          echo "Running scraper with mode: $MODE"
+          echo "Running daily scraper..."
+          python daily_scraper.py --recent
 
-          if [ "$MODE" = "all" ]; then
-            python daily_scraper.py
-          elif [ "$MODE" = "today" ]; then
-            python daily_scraper.py --today
-          else
-            python daily_scraper.py --recent
-          fi
-
-      - name: Run hometown lookup for new players
+      - name: Run hometown lookup
         run: |
-          python hometown_lookup_fixed.py || true
+          python hometown_lookup_fixed.py || echo "Hometown lookup had issues, continuing..."
 
       - name: Join all data
         run: |
@@ -68,37 +47,20 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          # Add all new/modified JSON files
-          git add output/json/*.json
-
-          # Check if there are changes to commit
+          git add output/json/*.json || true
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            # Get current date for commit message
             DATE=$(date +'%Y-%m-%d %H:%M UTC')
-
-            # Count new files
-            NEW_FILES=$(git diff --staged --name-only | wc -l)
-
-            git commit -m "Daily scrape: $DATE
-
-Updated $NEW_FILES data files
-Mode: ${{ github.event.inputs.mode || 'recent' }}
-
-[automated]"
-
+            git commit -m "Daily scrape: $DATE [automated]"
             git push
             echo "Changes committed and pushed"
           fi
 
       - name: Summary
         run: |
-          echo "## Scrape Summary" >> $GITHUB_STEP_SUMMARY
+          echo "## Daily Scrape Complete" >> $GITHUB_STEP_SUMMARY
+          echo "**Date:** $(date +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- **Mode:** ${{ github.event.inputs.mode || 'recent' }}" >> $GITHUB_STEP_SUMMARY
-          echo "- **Date:** $(date +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "### Latest Data Files" >> $GITHUB_STEP_SUMMARY
+          echo "### Data Files" >> $GITHUB_STEP_SUMMARY
           ls -la output/json/*.json 2>/dev/null | tail -10 >> $GITHUB_STEP_SUMMARY || echo "No JSON files found" >> $GITHUB_STEP_SUMMARY
-
