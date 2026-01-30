@@ -1,0 +1,97 @@
+name: Weekly Full Scrape
+
+on:
+  # Run every Sunday at 2 AM UTC
+  schedule:
+    - cron: '0 2 * * 0'
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  full-scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests euroleague-api
+
+      - name: Run full season scrape
+        run: |
+          echo "Running full season scrape (all 330 games)..."
+          python daily_scraper.py
+
+      - name: Run hometown lookup
+        run: |
+          echo "Running hometown lookup..."
+          python hometown_lookup_fixed.py || true
+
+      - name: Join all data
+        run: |
+          python join_data.py
+
+      - name: Clean old data files (keep last 7 days)
+        run: |
+          # Keep only the most recent files of each type
+          cd output/json
+
+          # For each file pattern, keep only the 2 most recent
+          for pattern in "clubs_" "players_" "american_players_2" "schedule_" "game_recaps_" "american_performances_" "american_player_stats_" "american_hometowns_" "unified_american_players_" "american_players_summary_"; do
+            files=$(ls -t ${pattern}*.json 2>/dev/null | tail -n +3)
+            if [ -n "$files" ]; then
+              echo "Removing old files matching ${pattern}*"
+              echo "$files" | xargs rm -f
+            fi
+          done
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Commit and push changes
+        run: |
+          git add output/json/*.json
+          git add -u output/json/  # Stage deletions
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            DATE=$(date +'%Y-%m-%d')
+            git commit -m "Weekly full scrape: $DATE
+
+- Full season data refresh (330 games)
+- Updated all player statistics
+- Cleaned old data files
+
+[automated]"
+            git push
+          fi
+
+      - name: Generate summary
+        run: |
+          echo "## Weekly Full Scrape Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Date:** $(date +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Data Files" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          ls -lh output/json/*.json 2>/dev/null | awk '{print $9, $5}' >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY

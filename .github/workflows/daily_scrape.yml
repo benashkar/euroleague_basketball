@@ -1,0 +1,106 @@
+name: Daily EuroLeague Scraper
+
+on:
+  # Run daily at 6 AM UTC (adjust for your timezone)
+  schedule:
+    - cron: '0 6 * * *'
+
+  # Allow manual trigger from GitHub UI
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Scrape mode'
+        required: true
+        default: 'recent'
+        type: choice
+        options:
+          - recent
+          - today
+          - all
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests euroleague-api
+
+      - name: Run daily scraper
+        run: |
+          # Use input mode if manually triggered, otherwise use 'recent'
+          MODE="${{ github.event.inputs.mode || 'recent' }}"
+          echo "Running scraper with mode: $MODE"
+
+          if [ "$MODE" = "all" ]; then
+            python daily_scraper.py
+          elif [ "$MODE" = "today" ]; then
+            python daily_scraper.py --today
+          else
+            python daily_scraper.py --recent
+          fi
+
+      - name: Run hometown lookup for new players
+        run: |
+          python hometown_lookup_fixed.py || true
+
+      - name: Join all data
+        run: |
+          python join_data.py
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Commit and push changes
+        run: |
+          # Add all new/modified JSON files
+          git add output/json/*.json
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            # Get current date for commit message
+            DATE=$(date +'%Y-%m-%d %H:%M UTC')
+
+            # Count new files
+            NEW_FILES=$(git diff --staged --name-only | wc -l)
+
+            git commit -m "Daily scrape: $DATE
+
+Updated $NEW_FILES data files
+Mode: ${{ github.event.inputs.mode || 'recent' }}
+
+[automated]"
+
+            git push
+            echo "Changes committed and pushed"
+          fi
+
+      - name: Summary
+        run: |
+          echo "## Scrape Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Mode:** ${{ github.event.inputs.mode || 'recent' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Date:** $(date +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Latest Data Files" >> $GITHUB_STEP_SUMMARY
+          ls -la output/json/*.json 2>/dev/null | tail -10 >> $GITHUB_STEP_SUMMARY || echo "No JSON files found" >> $GITHUB_STEP_SUMMARY
