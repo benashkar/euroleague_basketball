@@ -95,6 +95,28 @@ WIKI_API = "https://en.wikipedia.org/w/api.php"
 HEADERS = {'User-Agent': 'EuroLeagueTracker/1.0 (basketball data collection)'}
 
 # =============================================================================
+# MANUAL OVERRIDES
+# =============================================================================
+# Some players share names with more famous NBA players, causing Wikipedia
+# lookups to return the wrong person. This dictionary provides correct data
+# for those players. Key is the player's name (as it appears in the data).
+#
+# To add a new override:
+#   1. Find the correct Wikipedia page for the player
+#   2. Add an entry with hometown_city, hometown_state, college, high_school
+#
+MANUAL_OVERRIDES = {
+    # Devin Booker (born 1991) plays in EuroLeague - NOT the Phoenix Suns player
+    # Source: https://en.wikipedia.org/wiki/Devin_Booker_(basketball,_born_1991)
+    'BOOKER, DEVIN': {
+        'hometown_city': 'Union',
+        'hometown_state': 'South Carolina',
+        'college': 'Clemson',
+        'high_school': 'Union County High School',
+    },
+}
+
+# =============================================================================
 # US STATE DATA
 # =============================================================================
 # We need to validate that a location is actually in the US.
@@ -679,9 +701,6 @@ def main():
         # Show progress
         logger.info(f"[{i+1}/{len(unique)}] {clean} ({team})")
 
-        # Look up on Wikipedia
-        info = lookup_player(name)
-
         # Build the result record (includes original player data)
         player_result = {
             'code': player.get('code'),
@@ -693,21 +712,36 @@ def main():
             'birth_date': player.get('birth_date'),
         }
 
-        if info and info.get('lookup_successful'):
-            # Merge the lookup results into our record
-            player_result.update(info)
+        # Check for manual override first (handles name collisions with famous players)
+        if name.upper() in MANUAL_OVERRIDES:
+            override = MANUAL_OVERRIDES[name.upper()]
+            player_result['hometown_city'] = override.get('hometown_city')
+            player_result['hometown_state'] = override.get('hometown_state')
+            player_result['college'] = override.get('college')
+            player_result['high_school'] = override.get('high_school')
+            player_result['lookup_successful'] = True
+            player_result['source'] = 'manual_override'
             success += 1
-            logger.info(f"  FOUND: {info.get('hometown_city')}, {info.get('hometown_state')} | College: {info.get('college')}")
+            logger.info(f"  OVERRIDE: {override.get('hometown_city')}, {override.get('hometown_state')} | College: {override.get('college')}")
         else:
-            player_result['lookup_successful'] = False
-            failed += 1
-            logger.info(f"  Not found")
+            # Look up on Wikipedia
+            info = lookup_player(name)
+
+            if info and info.get('lookup_successful'):
+                # Merge the lookup results into our record
+                player_result.update(info)
+                success += 1
+                logger.info(f"  FOUND: {info.get('hometown_city')}, {info.get('hometown_state')} | College: {info.get('college')}")
+            else:
+                player_result['lookup_successful'] = False
+                failed += 1
+                logger.info(f"  Not found")
+
+            # IMPORTANT: Rate limiting!
+            # Be respectful to Wikipedia's servers - wait between requests
+            time.sleep(0.3)
 
         results.append(player_result)
-
-        # IMPORTANT: Rate limiting!
-        # Be respectful to Wikipedia's servers - wait between requests
-        time.sleep(0.3)
 
     # =========================================================================
     # Step 4: Save Results
