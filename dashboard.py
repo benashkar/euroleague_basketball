@@ -41,6 +41,29 @@ from flask import Flask, render_template_string, request
 # =============================================================================
 app = Flask(__name__)
 
+# =============================================================================
+# POSITION MAPPING
+# =============================================================================
+POSITION_MAP = {
+    '1': 'Point Guard',
+    '2': 'Shooting Guard',
+    '3': 'Small Forward',
+    '4': 'Power Forward',
+    '5': 'Center',
+    1: 'Point Guard',
+    2: 'Shooting Guard',
+    3: 'Small Forward',
+    4: 'Power Forward',
+    5: 'Center',
+}
+
+def get_position_name(pos):
+    """Convert position number to name."""
+    return POSITION_MAP.get(pos, pos or 'N/A')
+
+# Register as Jinja2 filter
+app.jinja_env.filters['position_name'] = get_position_name
+
 
 # =============================================================================
 # DATA LOADING
@@ -220,7 +243,7 @@ HOME_TEMPLATE = """
         <tr>
             <td><a href="/player/{{ player.code }}">{{ player.name }}</a></td>
             <td>{{ player.team or 'N/A' }}</td>
-            <td>{{ player.position or 'N/A' }}</td>
+            <td>{{ player.position|position_name }}</td>
             <td class="stats">{{ "%.1f"|format(player.ppg or 0) }}</td>
             <td class="stats">{{ "%.1f"|format(player.rpg or 0) }}</td>
             <td class="stats">{{ "%.1f"|format(player.apg or 0) }}</td>
@@ -246,7 +269,7 @@ PLAYER_TEMPLATE = """
     <h2>{{ player.name }}</h2>
     <p>
         <strong>Team:</strong> {{ player.team or 'N/A' }}<br>
-        <strong>Position:</strong> {{ player.position or 'N/A' }}<br>
+        <strong>Position:</strong> {{ player.position|position_name }}<br>
         <strong>Jersey:</strong> #{{ player.jersey or 'N/A' }}<br>
         <strong>Height:</strong> {{ player.height_cm or 'N/A' }} cm<br>
         <strong>Birth Date:</strong> {{ player.birth_date or 'N/A' }}
