@@ -181,6 +181,23 @@ BASE_TEMPLATE = """
         .game-log { font-size: 0.9em; }
         .win { color: #2ecc71; }
         .loss { color: #e74c3c; }
+        .player-header {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        .player-headshot {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .player-info {
+            flex: 1;
+        }
+        .player-info h2 {
+            margin-top: 0;
+        }
     </style>
 </head>
 <body>
@@ -265,20 +282,25 @@ PLAYER_TEMPLATE = """
 {% block content %}
 <a href="/">&larr; Back to all players</a>
 
-<div class="player-card">
-    <h2>{{ player.name }}</h2>
-    <p>
-        <strong>Team:</strong> {{ player.team or 'N/A' }}<br>
-        <strong>Position:</strong> {{ player.position|position_name }}<br>
-        <strong>Jersey:</strong> #{{ player.jersey or 'N/A' }}<br>
-        <strong>Height:</strong> {% if player.height_feet %}{{ player.height_feet }}'{{ player.height_inches }}"{% else %}N/A{% endif %}<br>
-        <strong>Birth Date:</strong> {{ player.birth_date or 'N/A' }}
-    </p>
-    <p>
-        <strong>Hometown:</strong> {{ player.hometown or 'Unknown' }}<br>
-        <strong>College:</strong> {{ player.college or 'N/A' }}<br>
-        <strong>High School:</strong> {{ player.high_school or 'N/A' }}
-    </p>
+<div class="player-card player-header">
+    {% if player.headshot_url %}
+    <img src="{{ player.headshot_url }}" alt="{{ player.name }}" class="player-headshot">
+    {% endif %}
+    <div class="player-info">
+        <h2>{{ player.name }}</h2>
+        <p>
+            <strong>Team:</strong> {{ player.team or 'N/A' }}<br>
+            <strong>Position:</strong> {{ player.position|position_name }}<br>
+            <strong>Jersey:</strong> #{{ player.jersey or 'N/A' }}<br>
+            <strong>Height:</strong> {% if player.height_feet %}{{ player.height_feet }}'{{ player.height_inches }}"{% else %}N/A{% endif %}<br>
+            <strong>Birth Date:</strong> {{ player.birth_date or 'N/A' }}
+        </p>
+        <p>
+            <strong>Hometown:</strong> {{ player.hometown or 'Unknown' }}<br>
+            <strong>College:</strong> {{ player.college or 'N/A' }}<br>
+            <strong>High School:</strong> {{ player.high_school or 'N/A' }}
+        </p>
+    </div>
 </div>
 
 <div class="player-card">

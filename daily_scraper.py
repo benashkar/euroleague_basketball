@@ -671,6 +671,9 @@ def main():
         country = person.get('country', {})
         birth_country = person.get('birthCountry', {})
 
+        # Extract image URLs (headshot and action photos)
+        images = record.get('images', {})
+
         # Build a clean player dictionary
         player = {
             'code': person.get('code'),
@@ -686,6 +689,8 @@ def main():
             'team_name': club.get('name') if club else None,
             'position': record.get('position'),
             'jersey': record.get('dorsal'),
+            'headshot_url': images.get('headshot'),
+            'action_url': images.get('action'),
         }
         all_players.append(player)
 

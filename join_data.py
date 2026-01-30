@@ -366,6 +366,8 @@ def main():
             'birth_date': birth_date,                  # YYYY-MM-DD format
             'nationality': player.get('nationality'),  # Country
             'birth_country': player.get('birth_country'),
+            'headshot_url': player.get('headshot_url'),  # Player headshot image
+            'action_url': player.get('action_url'),      # Player action photo
 
             # -----------------------------------------------------------------
             # Hometown/College Information (from Wikipedia)
