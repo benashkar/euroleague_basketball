@@ -785,8 +785,8 @@ def main():
                         'score': game.get('road', {}).get('score'),
                         'quarters': game.get('road', {}).get('partials', {}),
                     },
-                    'winner': game.get('winner', {}).get('name'),
-                    'venue': game.get('venue', {}).get('name'),
+                    'winner': (game.get('winner') or {}).get('name'),
+                    'venue': (game.get('venue') or {}).get('name'),
                     'american_players_count': len(perfs),
                 }
                 game_recaps.append(recap)
