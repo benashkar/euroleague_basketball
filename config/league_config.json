@@ -1,0 +1,49 @@
+{
+  "league": {
+    "league_id": "EUROLEAGUE",
+    "league_name": "EuroLeague",
+    "league_code": "EL",
+    "region": "Europe",
+    "base_url": "https://www.euroleaguebasketball.net/euroleague/",
+    "api_base": "https://api-live.euroleague.net",
+    "teams_url": "https://www.euroleaguebasketball.net/euroleague/teams/",
+    "schedule_url": "https://www.euroleaguebasketball.net/euroleague/game-center/",
+    "current_season_code": "E2024",
+    "timezone": "Europe/Madrid"
+  },
+  "hometown_sources": [
+    {
+      "priority": 1,
+      "name": "basketball_reference",
+      "display_name": "Basketball Reference",
+      "base_url": "https://www.basketball-reference.com",
+      "search_url": "https://www.basketball-reference.com/search/search.fcgi",
+      "rate_limit_seconds": 3,
+      "enabled": true
+    },
+    {
+      "priority": 2,
+      "name": "wikipedia",
+      "display_name": "Wikipedia",
+      "api_url": "https://en.wikipedia.org/api/rest_v1/page/summary/",
+      "search_url": "https://en.wikipedia.org/w/api.php",
+      "rate_limit_seconds": 1,
+      "enabled": true
+    },
+    {
+      "priority": 3,
+      "name": "grokepedia",
+      "display_name": "Grokepedia",
+      "base_url": "https://grokepedia.com",
+      "rate_limit_seconds": 2,
+      "enabled": true
+    }
+  ],
+  "photo_preferences": {
+    "preferred_aspect_ratio": "16:9",
+    "fallback_aspect_ratios": ["4:3", "1:1"],
+    "min_width": 640,
+    "min_height": 360,
+    "preferred_sources": ["euroleague_official", "basketball_reference", "wikipedia"]
+  }
+}
