@@ -114,6 +114,6 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
 # Default Command
 # -----------------------------------------------------------------------------
 # This runs when you start the container without specifying a command.
-# By default, we run the daily scraper in "recent" mode.
-# Override this by specifying a command: docker run <image> python other_script.py
-CMD ["python", "daily_scraper.py", "--recent"]
+# For web service deployment, we run the Flask dashboard with gunicorn.
+# For scraping, override with: docker run <image> python daily_scraper.py --recent
+CMD ["gunicorn", "dashboard:app", "--bind", "0.0.0.0:5000"]
