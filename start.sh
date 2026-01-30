@@ -4,5 +4,8 @@
 echo "=== Running scraper to fetch latest data ==="
 python daily_scraper.py
 
+echo "=== Joining data for dashboard ==="
+python join_data.py
+
 echo "=== Starting web server ==="
 exec gunicorn dashboard:app --bind 0.0.0.0:5000
