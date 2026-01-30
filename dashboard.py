@@ -211,6 +211,7 @@ HOME_TEMPLATE = """
             <th><a href="?sort=apg&{{ query_string }}">APG</a></th>
             <th>GP</th>
             <th>Hometown</th>
+            <th>High School</th>
             <th>College</th>
         </tr>
     </thead>
@@ -225,6 +226,7 @@ HOME_TEMPLATE = """
             <td class="stats">{{ "%.1f"|format(player.apg or 0) }}</td>
             <td>{{ player.games_played or 0 }}</td>
             <td class="hometown">{{ player.hometown or 'Unknown' }}</td>
+            <td>{{ player.high_school or 'N/A' }}</td>
             <td>{{ player.college or 'N/A' }}</td>
         </tr>
         {% endfor %}
