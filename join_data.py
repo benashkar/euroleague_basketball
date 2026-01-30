@@ -134,6 +134,36 @@ def save_json(data, filename):
 
 
 # =============================================================================
+# HEIGHT CONVERSION
+# =============================================================================
+
+def cm_to_feet_inches(cm):
+    """
+    Convert centimeters to feet and inches.
+
+    PARAMETERS:
+        cm (int/float): Height in centimeters
+
+    RETURNS:
+        tuple: (feet, inches) as integers, or (None, None) if input is invalid
+
+    EXAMPLE:
+        >>> cm_to_feet_inches(195)
+        (6, 5)  # 195 cm = 6'5"
+    """
+    if not cm:
+        return None, None
+    total_inches = cm / 2.54
+    feet = int(total_inches // 12)
+    inches = int(round(total_inches % 12))
+    # Handle rounding to 12 inches
+    if inches == 12:
+        feet += 1
+        inches = 0
+    return feet, inches
+
+
+# =============================================================================
 # MAIN FUNCTION
 # =============================================================================
 
@@ -310,6 +340,14 @@ def main():
             parts = name.split(', ', 1)
             name = f"{parts[1]} {parts[0]}".title()
 
+        # Convert height from cm to feet/inches
+        height_cm = player.get('height')
+        height_feet, height_inches = cm_to_feet_inches(height_cm)
+
+        # Convert birth_date from "YYYY-MM-DDTHH:MM:SS" to "YYYY-MM-DD"
+        raw_birth_date = player.get('birth_date', '')
+        birth_date = raw_birth_date[:10] if raw_birth_date else None
+
         # Build the unified player record
         # This combines data from all our sources into one comprehensive record
         unified = {
@@ -322,8 +360,10 @@ def main():
             'team_code': player.get('team_code'),      # Team code (e.g., 'BAR')
             'position': player.get('position'),        # Guard, Forward, Center
             'jersey': player.get('jersey'),            # Jersey number
-            'height_cm': player.get('height'),         # Height in centimeters
-            'birth_date': player.get('birth_date'),    # YYYY-MM-DD
+            'height_cm': height_cm,                    # Height in centimeters
+            'height_feet': height_feet,                # Height feet component
+            'height_inches': height_inches,            # Height inches component
+            'birth_date': birth_date,                  # YYYY-MM-DD format
             'nationality': player.get('nationality'),  # Country
             'birth_country': player.get('birth_country'),
 
@@ -356,7 +396,31 @@ def main():
             # -----------------------------------------------------------------
             'recent_games': games[:5],  # Last 5 games for quick display
             'all_games': games,         # Full game log
+
+            # -----------------------------------------------------------------
+            # Upcoming Games (from schedule)
+            # -----------------------------------------------------------------
+            'upcoming_games': [],  # Will be populated below
         }
+
+        # Build upcoming games for this player's team
+        team_code = player.get('team_code')
+        if schedule_data and team_code:
+            for game in schedule_data.get('games', []):
+                if not game.get('played'):
+                    local_code = game.get('local', {}).get('club', {}).get('code')
+                    road_code = game.get('road', {}).get('club', {}).get('code')
+                    if team_code in (local_code, road_code):
+                        is_home = (team_code == local_code)
+                        unified['upcoming_games'].append({
+                            'date': game.get('date', '')[:10],
+                            'opponent': game.get('road', {}).get('club', {}).get('name') if is_home else game.get('local', {}).get('club', {}).get('name'),
+                            'home_away': 'Home' if is_home else 'Away',
+                            'round': game.get('round'),
+                            'venue': game.get('venue', {}).get('name'),
+                        })
+            # Sort upcoming games by date
+            unified['upcoming_games'].sort(key=lambda x: x.get('date', ''))
 
         unified_players.append(unified)
 

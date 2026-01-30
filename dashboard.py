@@ -271,7 +271,7 @@ PLAYER_TEMPLATE = """
         <strong>Team:</strong> {{ player.team or 'N/A' }}<br>
         <strong>Position:</strong> {{ player.position|position_name }}<br>
         <strong>Jersey:</strong> #{{ player.jersey or 'N/A' }}<br>
-        <strong>Height:</strong> {{ player.height_cm or 'N/A' }} cm<br>
+        <strong>Height:</strong> {% if player.height_feet %}{{ player.height_feet }}'{{ player.height_inches }}"{% else %}N/A{% endif %}<br>
         <strong>Birth Date:</strong> {{ player.birth_date or 'N/A' }}
     </p>
     <p>
@@ -333,6 +333,32 @@ PLAYER_TEMPLATE = """
                 <td>{{ game.fg or 'N/A' }}</td>
                 <td>{{ game.three or 'N/A' }}</td>
                 <td>{{ game.ft or 'N/A' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+
+{% if player.upcoming_games %}
+<div class="player-card">
+    <h3>Upcoming Games</h3>
+    <table class="game-log">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Opponent</th>
+                <th>H/A</th>
+                <th>Round</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for game in player.upcoming_games %}
+            <tr>
+                <td>{{ game.date }}</td>
+                <td>{{ game.opponent }}</td>
+                <td>{{ game.home_away }}</td>
+                <td>{{ game.round }}</td>
             </tr>
             {% endfor %}
         </tbody>
