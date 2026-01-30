@@ -1,0 +1,34 @@
+# =============================================================================
+# RENDER.COM DEPLOYMENT CONFIGURATION
+# =============================================================================
+# This file tells Render how to deploy your app.
+# Render reads this automatically when you connect your GitHub repo.
+#
+# Documentation: https://render.com/docs/blueprint-spec
+# =============================================================================
+
+services:
+  # ---------------------------------------------------------------------------
+  # WEB DASHBOARD SERVICE
+  # ---------------------------------------------------------------------------
+  - type: web
+    name: euroleague-tracker
+    runtime: python
+    region: ohio  # Choose: oregon, ohio, frankfurt, singapore
+    plan: free    # Free tier!
+
+    # Build command - runs once when deploying
+    buildCommand: pip install -r requirements.txt
+
+    # Start command - runs the web server
+    startCommand: gunicorn dashboard:app --bind 0.0.0.0:$PORT
+
+    # Environment variables
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: FLASK_ENV
+        value: production
+
+    # Auto-deploy when you push to master branch
+    autoDeploy: true
