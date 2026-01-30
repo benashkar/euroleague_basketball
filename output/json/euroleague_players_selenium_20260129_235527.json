@@ -1,0 +1,44 @@
+{
+  "export_date": "2026-01-29T23:57:49.902706",
+  "league": "EuroLeague",
+  "season": "2024-25",
+  "player_count": 4,
+  "players": [
+    {
+      "player_code": "",
+      "name": "Players",
+      "player_url": "https://www.euroleaguebasketball.net/euroleague/players/",
+      "team_code": "as-monaco",
+      "team_name": "As Monaco",
+      "nationality": "is required",
+      "position": "center"
+    },
+    {
+      "player_code": "",
+      "name": "Players",
+      "player_url": "https://www.euroleaguebasketball.net/euroleague/players/",
+      "team_code": "crvena-zvezda-meridianbet-belgrade",
+      "team_name": "Crvena Zvezda Meridianbet Belgrade",
+      "nationality": "is required",
+      "position": "center"
+    },
+    {
+      "player_code": "",
+      "name": "Players",
+      "player_url": "https://www.euroleaguebasketball.net/euroleague/players/",
+      "team_code": "fenerbahce-beko-istanbul",
+      "team_name": "Fenerbahce Beko Istanbul",
+      "nationality": "is required",
+      "position": "center"
+    },
+    {
+      "player_code": "",
+      "name": "Players",
+      "player_url": "https://www.euroleaguebasketball.net/euroleague/players/",
+      "team_code": "ldlc-asvel-villeurbanne",
+      "team_name": "Ldlc Asvel Villeurbanne",
+      "nationality": "is required",
+      "position": "center"
+    }
+  ]
+}

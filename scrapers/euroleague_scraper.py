@@ -130,18 +130,35 @@ class EuroLeagueScraper(BaseScraper):
             return []
 
         teams = []
+        seen_slugs = set()  # Track duplicates
 
-        # Look for team cards/links
-        team_links = soup.find_all('a', href=re.compile(r'/euroleague/teams/[^/]+/$'))
+        # Look for team roster links - they have format /euroleague/teams/{slug}/roster/{code}/
+        team_links = soup.find_all('a', href=re.compile(r'/euroleague/teams/[^/]+/roster/'))
 
         for link in team_links:
-            team_name = self.extract_text(link)
-            if not team_name or len(team_name) < 2:
+            href = link.get('href', '')
+
+            # Extract team slug from URL: /euroleague/teams/{slug}/roster/{code}/
+            team_slug_match = re.search(r'/teams/([^/]+)/roster/([^/]+)/', href)
+            if not team_slug_match:
                 continue
 
-            href = link.get('href', '')
-            team_slug_match = re.search(r'/teams/([^/]+)/', href)
-            team_slug = team_slug_match.group(1) if team_slug_match else ''
+            team_slug = team_slug_match.group(1)
+            team_code = team_slug_match.group(2).upper()
+
+            # Skip duplicates
+            if team_slug in seen_slugs:
+                continue
+            seen_slugs.add(team_slug)
+
+            # Get team name - convert slug to readable name
+            # e.g., "anadolu-efes-istanbul" -> "Anadolu Efes Istanbul"
+            team_name = team_slug.replace('-', ' ').title()
+
+            # Try to find better team name from link text or nearby elements
+            link_text = self.extract_text(link)
+            if link_text and len(link_text) > 3 and not link_text.lower().startswith('roster'):
+                team_name = link_text
 
             # Try to find logo
             logo = link.find('img')

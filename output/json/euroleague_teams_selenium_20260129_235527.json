@@ -1,0 +1,100 @@
+{
+  "export_date": "2026-01-29T23:57:49.908688",
+  "league": "EuroLeague",
+  "season": "2024-25",
+  "team_count": 23,
+  "teams": [
+    {
+      "code": "anadolu-efes-istanbul",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/anadolu-efes-istanbul/roster/"
+    },
+    {
+      "code": "as-monaco",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/as-monaco/roster/"
+    },
+    {
+      "code": "baskonia-vitoria-gasteiz",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/baskonia-vitoria-gasteiz/roster/"
+    },
+    {
+      "code": "crvena-zvezda-meridianbet-belgrade",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/crvena-zvezda-meridianbet-belgrade/roster/"
+    },
+    {
+      "code": "dubai-basketball",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/dubai-basketball/roster/"
+    },
+    {
+      "code": "ea7-emporio-armani-milan",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/ea7-emporio-armani-milan/roster/"
+    },
+    {
+      "code": "fc-barcelona",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/fc-barcelona/roster/"
+    },
+    {
+      "code": "fc-bayern-munich",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/fc-bayern-munich/roster/"
+    },
+    {
+      "code": "fenerbahce-beko-istanbul",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/fenerbahce-beko-istanbul/roster/"
+    },
+    {
+      "code": "hapoel-ibi-tel-aviv",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/hapoel-ibi-tel-aviv/roster/"
+    },
+    {
+      "code": "kosner-baskonia-vitoria-gasteiz",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/kosner-baskonia-vitoria-gasteiz/roster/"
+    },
+    {
+      "code": "ldlc-asvel-villeurbanne",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/ldlc-asvel-villeurbanne/roster/"
+    },
+    {
+      "code": "maccabi-rapyd-tel-aviv",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/maccabi-rapyd-tel-aviv/roster/"
+    },
+    {
+      "code": "olympiacos-piraeus",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/olympiacos-piraeus/roster/"
+    },
+    {
+      "code": "panathinaikos-aktor-athens",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/panathinaikos-aktor-athens/roster/"
+    },
+    {
+      "code": "panathinaikos-bc-athens",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/panathinaikos-bc-athens/roster/"
+    },
+    {
+      "code": "paris-basketball",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/paris-basketball/roster/"
+    },
+    {
+      "code": "partizan-mozzart-bet-belgrade",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/partizan-mozzart-bet-belgrade/roster/"
+    },
+    {
+      "code": "partizan-nis-belgrade",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/partizan-nis-belgrade/roster/"
+    },
+    {
+      "code": "real-madrid",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/real-madrid/roster/"
+    },
+    {
+      "code": "valencia-basket",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/valencia-basket/roster/"
+    },
+    {
+      "code": "virtus-bologna",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/virtus-bologna/roster/"
+    },
+    {
+      "code": "zalgiris-kaunas",
+      "roster_url": "https://www.euroleaguebasketball.net/euroleague/teams/zalgiris-kaunas/roster/"
+    }
+  ]
+}
