@@ -101,3 +101,4 @@ Mode: ${{ github.event.inputs.mode || 'recent' }}
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Latest Data Files" >> $GITHUB_STEP_SUMMARY
           ls -la output/json/*.json 2>/dev/null | tail -10 >> $GITHUB_STEP_SUMMARY || echo "No JSON files found" >> $GITHUB_STEP_SUMMARY
+
