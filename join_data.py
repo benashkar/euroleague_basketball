@@ -435,7 +435,7 @@ def main():
     full_export = {
         'export_date': datetime.now().isoformat(),
         'league': 'EuroLeague',
-        'season': '2024-25',
+        'season': '2025-26',
         'total_players': len(unified_players),
         'total_games_in_season': schedule_data.get('total_games', 0) if schedule_data else 0,
         'clubs': clubs_data.get('clubs', []) if clubs_data else [],
@@ -457,7 +457,7 @@ def main():
     summary_export = {
         'export_date': datetime.now().isoformat(),
         'league': 'EuroLeague',
-        'season': '2024-25',
+        'season': '2025-26',
         'total_players': len(summary_players),
         'players': summary_players,
     }

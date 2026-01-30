@@ -97,9 +97,9 @@ logger = logging.getLogger(__name__)
 # BASE_URL: The root URL for all EuroLeague API requests
 BASE_URL = 'https://api-live.euroleague.net'
 
-# SEASON: The season identifier (E2024 = 2024-25 season)
+# SEASON: The season identifier (E2025 = 2025-26 season)
 # Format is "E" for EuroLeague + the starting year
-SEASON = 'E2024'
+SEASON = 'E2025'
 
 # COMPETITION: Competition code ("E" for EuroLeague, "U" for EuroCup)
 COMPETITION = 'E'
