@@ -41,4 +41,4 @@ pytest-cov>=4.1.0         # Test coverage reporting
 
 # EUROLEAGUE API CLIENT (optional)
 # -----------------------------------------
-euroleague-api>=1.0.0     # Official EuroLeague API wrapper
+euroleague-api>=0.0.21    # Official EuroLeague API wrapper
