@@ -1,0 +1,59 @@
+# =============================================================================
+# DOCKER IGNORE FILE
+# =============================================================================
+# Files and directories listed here will NOT be copied into the Docker image.
+# This keeps the image smaller and build times faster.
+
+# Git files
+.git
+.gitignore
+
+# Python cache files
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info
+.eggs
+*.egg
+
+# Virtual environments
+venv/
+env/
+.env
+.venv/
+
+# IDE settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Output data (will be mounted as volume)
+output/
+
+# Logs (will be mounted as volume)
+logs/
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Documentation
+*.md
+docs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
+
+# Docker files (no need to copy these into the container)
+Dockerfile
+docker-compose.yml
+.dockerignore

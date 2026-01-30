@@ -1,0 +1,176 @@
+# =============================================================================
+# DOCKER COMPOSE CONFIGURATION
+# =============================================================================
+#
+# PURPOSE:
+#     Simplifies running multiple Docker containers together.
+#     Defines all the services needed for the EuroLeague scraper project.
+#
+# HOW TO USE:
+#     Start the dashboard:
+#         docker-compose up dashboard
+#
+#     Run a scrape:
+#         docker-compose run scraper
+#
+#     Run the full pipeline:
+#         docker-compose run full-scrape
+#
+#     Stop everything:
+#         docker-compose down
+#
+#     View logs:
+#         docker-compose logs -f
+#
+# WHY USE DOCKER COMPOSE:
+#     1. One command to start everything
+#     2. Easy to configure environment variables
+#     3. Handles volumes (data persistence) automatically
+#     4. Can scale services if needed
+#
+# =============================================================================
+
+version: '3.8'
+
+# -----------------------------------------------------------------------------
+# SERVICES
+# -----------------------------------------------------------------------------
+# Each service is a separate container that can be started independently.
+
+services:
+
+  # ---------------------------------------------------------------------------
+  # DASHBOARD SERVICE
+  # ---------------------------------------------------------------------------
+  # Runs the web dashboard for viewing player data.
+  #
+  # Access at: http://localhost:5000
+  #
+  # Start with: docker-compose up dashboard
+  #
+  dashboard:
+    build: .
+    container_name: euroleague-dashboard
+    command: python dashboard.py
+    ports:
+      # Map container port 5000 to host port 5000
+      - "5000:5000"
+    volumes:
+      # Mount output directory so dashboard can read JSON files
+      - ./output:/app/output
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped
+
+  # ---------------------------------------------------------------------------
+  # SCRAPER SERVICE
+  # ---------------------------------------------------------------------------
+  # Runs the daily scraper (recent games only).
+  #
+  # Start with: docker-compose run scraper
+  #
+  scraper:
+    build: .
+    container_name: euroleague-scraper
+    command: python daily_scraper.py --recent
+    volumes:
+      # Mount output directory so scraped data is saved to your machine
+      - ./output:/app/output
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+      # Optional: Alert configuration
+      # - SLACK_WEBHOOK_URL=https://hooks.slack.com/services/xxx
+      # - EMAIL_USERNAME=your@email.com
+      # - EMAIL_PASSWORD=your-app-password
+      # - EMAIL_TO=recipient@email.com
+
+  # ---------------------------------------------------------------------------
+  # FULL SCRAPE SERVICE
+  # ---------------------------------------------------------------------------
+  # Runs the complete pipeline: scraper + hometown lookup + join data.
+  #
+  # Start with: docker-compose run full-scrape
+  #
+  full-scrape:
+    build: .
+    container_name: euroleague-full-scrape
+    command: >
+      bash -c "
+        echo '=== Running Daily Scraper ===' &&
+        python daily_scraper.py --recent &&
+        echo '=== Running Hometown Lookup ===' &&
+        python hometown_lookup_fixed.py || true &&
+        echo '=== Joining Data ===' &&
+        python join_data.py &&
+        echo '=== Complete! ==='
+      "
+    volumes:
+      - ./output:/app/output
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  # ---------------------------------------------------------------------------
+  # WEEKLY FULL SCRAPE SERVICE
+  # ---------------------------------------------------------------------------
+  # Runs a complete scrape of all 330 games (takes longer).
+  #
+  # Start with: docker-compose run weekly-scrape
+  #
+  weekly-scrape:
+    build: .
+    container_name: euroleague-weekly-scrape
+    command: >
+      bash -c "
+        echo '=== Running Full Season Scrape ===' &&
+        python daily_scraper.py &&
+        echo '=== Running Hometown Lookup ===' &&
+        python hometown_lookup_fixed.py || true &&
+        echo '=== Joining Data ===' &&
+        python join_data.py &&
+        echo '=== Complete! ==='
+      "
+    volumes:
+      - ./output:/app/output
+      - ./logs:/app/logs
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  # ---------------------------------------------------------------------------
+  # TEST SERVICE
+  # ---------------------------------------------------------------------------
+  # Runs unit tests.
+  #
+  # Start with: docker-compose run tests
+  #
+  tests:
+    build: .
+    container_name: euroleague-tests
+    command: python -m pytest tests/ -v
+    volumes:
+      - ./tests:/app/tests
+      - ./output:/app/output
+
+# -----------------------------------------------------------------------------
+# VOLUMES
+# -----------------------------------------------------------------------------
+# Named volumes for data persistence.
+# These survive container restarts and can be backed up.
+
+volumes:
+  output-data:
+    driver: local
+  log-data:
+    driver: local
+
+# -----------------------------------------------------------------------------
+# NETWORKS
+# -----------------------------------------------------------------------------
+# All services share the same network by default, allowing them to
+# communicate with each other if needed.
+
+networks:
+  default:
+    name: euroleague-network
