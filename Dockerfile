@@ -86,6 +86,20 @@ COPY . .
 RUN mkdir -p /app/output/json /app/logs
 
 # -----------------------------------------------------------------------------
+# Pre-populate Data During Build
+# -----------------------------------------------------------------------------
+# Run the scraper during build to bake data into the image.
+# This enables instant cold starts (web server starts immediately).
+# Data refreshes with each new deployment.
+RUN echo "=== Building: Fetching player data ===" && \
+    python daily_scraper.py && \
+    echo "=== Building: Looking up hometowns ===" && \
+    (python hometown_lookup_fixed.py || true) && \
+    echo "=== Building: Joining data ===" && \
+    python join_data.py && \
+    echo "=== Build complete: Data ready ==="
+
+# -----------------------------------------------------------------------------
 # Set Environment Variables
 # -----------------------------------------------------------------------------
 # PYTHONUNBUFFERED=1: Print output immediately (don't buffer)
