@@ -1,0 +1,1916 @@
+{
+  "export_date": "2026-01-31T06:06:19.921857",
+  "season": "E2025",
+  "player_count": 83,
+  "players": [
+    {
+      "player_code": "013363",
+      "player_name": "NWORA, JORDAN",
+      "team": "Crvena Zvezda Meridianbet Belgrade",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 22,
+      "total_rebounds": 4,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-30T20:00:00",
+          "opponent": "Dubai Basketball",
+          "points": 22,
+          "rebounds": 4,
+          "assists": 1,
+          "minutes": 28.5
+        }
+      ],
+      "ppg": 22.0,
+      "rpg": 4.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "014124",
+      "player_name": "HORTON TUCKER, TALEN",
+      "team": "Fenerbahce Beko Istanbul",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 22,
+      "total_rebounds": 3,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-29T18:45:00",
+          "opponent": "Anadolu Efes Istanbul",
+          "points": 22,
+          "rebounds": 3,
+          "assists": 2,
+          "minutes": 19.2
+        }
+      ],
+      "ppg": 22.0,
+      "rpg": 3.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "008987",
+      "player_name": "LEDAY, ZACH",
+      "team": "EA7 Emporio Armani Milan",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 20,
+      "total_rebounds": 4,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T20:30:00",
+          "opponent": "Partizan Mozzart Bet Belgrade",
+          "points": 20,
+          "rebounds": 4,
+          "assists": 0,
+          "minutes": 24.8
+        }
+      ],
+      "ppg": 20.0,
+      "rpg": 4.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "011286",
+      "player_name": "BACON, DWAYNE",
+      "team": "Dubai Basketball",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 19,
+      "total_rebounds": 4,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-30T20:00:00",
+          "opponent": "Crvena Zvezda Meridianbet Belgrade",
+          "points": 19,
+          "rebounds": 4,
+          "assists": 2,
+          "minutes": 32.7
+        }
+      ],
+      "ppg": 19.0,
+      "rpg": 4.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "014005",
+      "player_name": "ALSTON JR. , DERRICK",
+      "team": "Virtus Bologna",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 19,
+      "total_rebounds": 3,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-30T19:30:00",
+          "opponent": "AS Monaco",
+          "points": 19,
+          "rebounds": 3,
+          "assists": 2,
+          "minutes": 22.1
+        }
+      ],
+      "ppg": 19.0,
+      "rpg": 3.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "013389",
+      "player_name": "LEE, SABEN",
+      "team": "Anadolu Efes Istanbul",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 19,
+      "total_rebounds": 0,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-29T18:45:00",
+          "opponent": "Fenerbahce Beko Istanbul",
+          "points": 19,
+          "rebounds": 0,
+          "assists": 1,
+          "minutes": 23.1
+        }
+      ],
+      "ppg": 19.0,
+      "rpg": 0.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "005985",
+      "player_name": "JAMES, MIKE",
+      "team": "AS Monaco",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 17,
+      "total_rebounds": 2,
+      "total_assists": 9,
+      "performances": [
+        {
+          "date": "2026-01-30T19:30:00",
+          "opponent": "Virtus Bologna",
+          "points": 17,
+          "rebounds": 2,
+          "assists": 9,
+          "minutes": 32.4
+        }
+      ],
+      "ppg": 17.0,
+      "rpg": 2.0,
+      "apg": 9.0
+    },
+    {
+      "player_code": "011217",
+      "player_name": "TAYLOR, KAMERON",
+      "team": "Valencia Basket",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 17,
+      "total_rebounds": 3,
+      "total_assists": 5,
+      "performances": [
+        {
+          "date": "2026-01-29T20:45:00",
+          "opponent": "Maccabi Rapyd Tel Aviv",
+          "points": 17,
+          "rebounds": 3,
+          "assists": 5,
+          "minutes": 28.8
+        }
+      ],
+      "ppg": 17.0,
+      "rpg": 3.0,
+      "apg": 5.0
+    },
+    {
+      "player_code": "012720",
+      "player_name": "BROWN, STERLING",
+      "team": "Partizan Mozzart Bet Belgrade",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 17,
+      "total_rebounds": 2,
+      "total_assists": 4,
+      "performances": [
+        {
+          "date": "2026-01-29T20:30:00",
+          "opponent": "EA7 Emporio Armani Milan",
+          "points": 17,
+          "rebounds": 2,
+          "assists": 4,
+          "minutes": 35.4
+        }
+      ],
+      "ppg": 17.0,
+      "rpg": 2.0,
+      "apg": 4.0
+    },
+    {
+      "player_code": "009849",
+      "player_name": "DORSEY, TYLER",
+      "team": "Olympiacos Piraeus",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 17,
+      "total_rebounds": 4,
+      "total_assists": 3,
+      "performances": [
+        {
+          "date": "2026-01-29T20:15:00",
+          "opponent": "FC Barcelona",
+          "points": 17,
+          "rebounds": 4,
+          "assists": 3,
+          "minutes": 30.0
+        }
+      ],
+      "ppg": 17.0,
+      "rpg": 4.0,
+      "apg": 3.0
+    },
+    {
+      "player_code": "013367",
+      "player_name": "FORREST, TRENT",
+      "team": "Kosner Baskonia Vitoria-Gasteiz",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 16,
+      "total_rebounds": 3,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-30T20:30:00",
+          "opponent": "Zalgiris Kaunas",
+          "points": 16,
+          "rebounds": 3,
+          "assists": 2,
+          "minutes": 23.0
+        }
+      ],
+      "ppg": 16.0,
+      "rpg": 3.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "014163",
+      "player_name": "BUTLER, JARED",
+      "team": "Crvena Zvezda Meridianbet Belgrade",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 16,
+      "total_rebounds": 2,
+      "total_assists": 5,
+      "performances": [
+        {
+          "date": "2026-01-30T20:00:00",
+          "opponent": "Dubai Basketball",
+          "points": 16,
+          "rebounds": 2,
+          "assists": 5,
+          "minutes": 20.9
+        }
+      ],
+      "ppg": 16.0,
+      "rpg": 2.0,
+      "apg": 5.0
+    },
+    {
+      "player_code": "009048",
+      "player_name": "MILLER-MCINTYRE, CODI",
+      "team": "Crvena Zvezda Meridianbet Belgrade",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 16,
+      "total_rebounds": 4,
+      "total_assists": 7,
+      "performances": [
+        {
+          "date": "2026-01-30T20:00:00",
+          "opponent": "Dubai Basketball",
+          "points": 16,
+          "rebounds": 4,
+          "assists": 7,
+          "minutes": 27.9
+        }
+      ],
+      "ppg": 16.0,
+      "rpg": 4.0,
+      "apg": 7.0
+    },
+    {
+      "player_code": "012606",
+      "player_name": "WRIGHT IV, MCKINLEY",
+      "team": "Dubai Basketball",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 16,
+      "total_rebounds": 1,
+      "total_assists": 4,
+      "performances": [
+        {
+          "date": "2026-01-30T20:00:00",
+          "opponent": "Crvena Zvezda Meridianbet Belgrade",
+          "points": 16,
+          "rebounds": 1,
+          "assists": 4,
+          "minutes": 28.1
+        }
+      ],
+      "ppg": 16.0,
+      "rpg": 1.0,
+      "apg": 4.0
+    },
+    {
+      "player_code": "014213",
+      "player_name": "PAYNE, CAMERON",
+      "team": "Partizan Mozzart Bet Belgrade",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 16,
+      "total_rebounds": 3,
+      "total_assists": 3,
+      "performances": [
+        {
+          "date": "2026-01-29T20:30:00",
+          "opponent": "EA7 Emporio Armani Milan",
+          "points": 16,
+          "rebounds": 3,
+          "assists": 3,
+          "minutes": 19.9
+        }
+      ],
+      "ppg": 16.0,
+      "rpg": 3.0,
+      "apg": 3.0
+    },
+    {
+      "player_code": "011981",
+      "player_name": "JONES, TYRIQUE",
+      "team": "Olympiacos Piraeus",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 16,
+      "total_rebounds": 8,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-29T20:15:00",
+          "opponent": "FC Barcelona",
+          "points": 16,
+          "rebounds": 8,
+          "assists": 2,
+          "minutes": 20.9
+        }
+      ],
+      "ppg": 16.0,
+      "rpg": 8.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "011204",
+      "player_name": "GRANT, JERIAN",
+      "team": "Panathinaikos AKTOR Athens",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 15,
+      "total_rebounds": 5,
+      "total_assists": 3,
+      "performances": [
+        {
+          "date": "2026-01-30T20:45:00",
+          "opponent": "LDLC ASVEL Villeurbanne",
+          "points": 15,
+          "rebounds": 5,
+          "assists": 3,
+          "minutes": 35.8
+        }
+      ],
+      "ppg": 15.0,
+      "rpg": 5.0,
+      "apg": 3.0
+    },
+    {
+      "player_code": "011948",
+      "player_name": "HOWARD, MARKUS",
+      "team": "Kosner Baskonia Vitoria-Gasteiz",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 15,
+      "total_rebounds": 3,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-30T20:30:00",
+          "opponent": "Zalgiris Kaunas",
+          "points": 15,
+          "rebounds": 3,
+          "assists": 2,
+          "minutes": 22.4
+        }
+      ],
+      "ppg": 15.0,
+      "rpg": 3.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "012585",
+      "player_name": "MORGAN, MATTHEW",
+      "team": "Virtus Bologna",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 15,
+      "total_rebounds": 1,
+      "total_assists": 4,
+      "performances": [
+        {
+          "date": "2026-01-30T19:30:00",
+          "opponent": "AS Monaco",
+          "points": 15,
+          "rebounds": 1,
+          "assists": 4,
+          "minutes": 24.2
+        }
+      ],
+      "ppg": 15.0,
+      "rpg": 1.0,
+      "apg": 4.0
+    },
+    {
+      "player_code": "011199",
+      "player_name": "NEBO, JOSH",
+      "team": "EA7 Emporio Armani Milan",
+      "nationality": "Slovenia",
+      "games_played": 1,
+      "total_points": 15,
+      "total_rebounds": 4,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-29T20:30:00",
+          "opponent": "Partizan Mozzart Bet Belgrade",
+          "points": 15,
+          "rebounds": 4,
+          "assists": 2,
+          "minutes": 25.4
+        }
+      ],
+      "ppg": 15.0,
+      "rpg": 4.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "009862",
+      "player_name": "PUNTER, KEVIN",
+      "team": "FC Barcelona",
+      "nationality": "Serbia",
+      "games_played": 1,
+      "total_points": 15,
+      "total_rebounds": 1,
+      "total_assists": 4,
+      "performances": [
+        {
+          "date": "2026-01-29T20:15:00",
+          "opponent": "Olympiacos Piraeus",
+          "points": 15,
+          "rebounds": 1,
+          "assists": 4,
+          "minutes": 31.6
+        }
+      ],
+      "ppg": 15.0,
+      "rpg": 1.0,
+      "apg": 4.0
+    },
+    {
+      "player_code": "014178",
+      "player_name": "RHODEN, JARED",
+      "team": "Paris Basketball",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 15,
+      "total_rebounds": 1,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-27T21:00:00",
+          "opponent": "Real Madrid",
+          "points": 15,
+          "rebounds": 1,
+          "assists": 1,
+          "minutes": 18.6
+        }
+      ],
+      "ppg": 15.0,
+      "rpg": 1.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "011231",
+      "player_name": "BLOSSOMGAME, JARON",
+      "team": "AS Monaco",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 14,
+      "total_rebounds": 1,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-30T19:30:00",
+          "opponent": "Virtus Bologna",
+          "points": 14,
+          "rebounds": 1,
+          "assists": 1,
+          "minutes": 24.9
+        }
+      ],
+      "ppg": 14.0,
+      "rpg": 1.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "014012",
+      "player_name": "LEAF, TJ",
+      "team": "Maccabi Rapyd Tel Aviv",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 14,
+      "total_rebounds": 4,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-29T20:45:00",
+          "opponent": "Valencia Basket",
+          "points": 14,
+          "rebounds": 4,
+          "assists": 1,
+          "minutes": 21.2
+        }
+      ],
+      "ppg": 14.0,
+      "rpg": 4.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "010581",
+      "player_name": "OSETKOWSKI, DYLAN",
+      "team": "Partizan Mozzart Bet Belgrade",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 14,
+      "total_rebounds": 5,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T20:30:00",
+          "opponent": "EA7 Emporio Armani Milan",
+          "points": 14,
+          "rebounds": 5,
+          "assists": 0,
+          "minutes": 28.8
+        }
+      ],
+      "ppg": 14.0,
+      "rpg": 5.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "004888",
+      "player_name": "CLYBURN, WILL",
+      "team": "FC Barcelona",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 14,
+      "total_rebounds": 2,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-29T20:15:00",
+          "opponent": "Olympiacos Piraeus",
+          "points": 14,
+          "rebounds": 2,
+          "assists": 1,
+          "minutes": 17.3
+        }
+      ],
+      "ppg": 14.0,
+      "rpg": 2.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "011927",
+      "player_name": "SLEVA, DUSTIN",
+      "team": "Zalgiris Kaunas",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 13,
+      "total_rebounds": 5,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-30T20:30:00",
+          "opponent": "Kosner Baskonia Vitoria-Gasteiz",
+          "points": 13,
+          "rebounds": 5,
+          "assists": 1,
+          "minutes": 21.7
+        }
+      ],
+      "ppg": 13.0,
+      "rpg": 5.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "014152",
+      "player_name": "SIMMONS, KOBI",
+      "team": "Kosner Baskonia Vitoria-Gasteiz",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 12,
+      "total_rebounds": 2,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-30T20:30:00",
+          "opponent": "Zalgiris Kaunas",
+          "points": 12,
+          "rebounds": 2,
+          "assists": 2,
+          "minutes": 22.3
+        }
+      ],
+      "ppg": 12.0,
+      "rpg": 2.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "012878",
+      "player_name": "WRIGHT, MOSES",
+      "team": "Zalgiris Kaunas",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 12,
+      "total_rebounds": 7,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-30T20:30:00",
+          "opponent": "Kosner Baskonia Vitoria-Gasteiz",
+          "points": 12,
+          "rebounds": 7,
+          "assists": 0,
+          "minutes": 20.9
+        }
+      ],
+      "ppg": 12.0,
+      "rpg": 7.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "014115",
+      "player_name": "MOORE, OMARI",
+      "team": "Valencia Basket",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 12,
+      "total_rebounds": 1,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-29T20:45:00",
+          "opponent": "Maccabi Rapyd Tel Aviv",
+          "points": 12,
+          "rebounds": 1,
+          "assists": 2,
+          "minutes": 18.5
+        }
+      ],
+      "ppg": 12.0,
+      "rpg": 1.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "013699",
+      "player_name": "CLARK III, JIMMY",
+      "team": "Maccabi Rapyd Tel Aviv",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 12,
+      "total_rebounds": 3,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-29T20:45:00",
+          "opponent": "Valencia Basket",
+          "points": 12,
+          "rebounds": 3,
+          "assists": 2,
+          "minutes": 16.9
+        }
+      ],
+      "ppg": 12.0,
+      "rpg": 3.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "014008",
+      "player_name": "ROBINSON, JUSTIN",
+      "team": "Paris Basketball",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 12,
+      "total_rebounds": 0,
+      "total_assists": 5,
+      "performances": [
+        {
+          "date": "2026-01-27T21:00:00",
+          "opponent": "Real Madrid",
+          "points": 12,
+          "rebounds": 0,
+          "assists": 5,
+          "minutes": 16.7
+        }
+      ],
+      "ppg": 12.0,
+      "rpg": 0.0,
+      "apg": 5.0
+    },
+    {
+      "player_code": "014011",
+      "player_name": "HOLMES, RICHAUN",
+      "team": "Panathinaikos AKTOR Athens",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 11,
+      "total_rebounds": 9,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-30T20:45:00",
+          "opponent": "LDLC ASVEL Villeurbanne",
+          "points": 11,
+          "rebounds": 9,
+          "assists": 1,
+          "minutes": 31.5
+        }
+      ],
+      "ppg": 11.0,
+      "rpg": 9.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "012788",
+      "player_name": "OTURU, DAN",
+      "team": "Hapoel IBI Tel Aviv",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 10,
+      "total_rebounds": 5,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-29T20:05:00",
+          "opponent": "FC Bayern Munich",
+          "points": 10,
+          "rebounds": 5,
+          "assists": 1,
+          "minutes": 17.3
+        }
+      ],
+      "ppg": 10.0,
+      "rpg": 5.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "014088",
+      "player_name": "SELJAAS, ZACHARY",
+      "team": "LDLC ASVEL Villeurbanne",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 9,
+      "total_rebounds": 3,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-30T20:45:00",
+          "opponent": "Panathinaikos AKTOR Athens",
+          "points": 9,
+          "rebounds": 3,
+          "assists": 1,
+          "minutes": 18.4
+        }
+      ],
+      "ppg": 9.0,
+      "rpg": 3.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "006835",
+      "player_name": "HOARD, JAYLEN",
+      "team": "Maccabi Rapyd Tel Aviv",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 9,
+      "total_rebounds": 5,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-29T20:45:00",
+          "opponent": "Valencia Basket",
+          "points": 9,
+          "rebounds": 5,
+          "assists": 1,
+          "minutes": 25.1
+        }
+      ],
+      "ppg": 9.0,
+      "rpg": 5.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "013384",
+      "player_name": "BROOKS, ARMONI",
+      "team": "EA7 Emporio Armani Milan",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 9,
+      "total_rebounds": 1,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T20:30:00",
+          "opponent": "Partizan Mozzart Bet Belgrade",
+          "points": 9,
+          "rebounds": 1,
+          "assists": 0,
+          "minutes": 19.6
+        }
+      ],
+      "ppg": 9.0,
+      "rpg": 1.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "011157",
+      "player_name": "MOTLEY, JOHNATHAN",
+      "team": "Hapoel IBI Tel Aviv",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 9,
+      "total_rebounds": 2,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-29T20:05:00",
+          "opponent": "FC Bayern Munich",
+          "points": 9,
+          "rebounds": 2,
+          "assists": 1,
+          "minutes": 17.8
+        }
+      ],
+      "ppg": 9.0,
+      "rpg": 2.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "012742",
+      "player_name": "DOZIER, PJ",
+      "team": "Anadolu Efes Istanbul",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 9,
+      "total_rebounds": 4,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-29T18:45:00",
+          "opponent": "Fenerbahce Beko Istanbul",
+          "points": 9,
+          "rebounds": 4,
+          "assists": 2,
+          "minutes": 27.3
+        }
+      ],
+      "ppg": 9.0,
+      "rpg": 4.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "014025",
+      "player_name": "SWIDER, COLE",
+      "team": "Anadolu Efes Istanbul",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 9,
+      "total_rebounds": 4,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-29T18:45:00",
+          "opponent": "Fenerbahce Beko Istanbul",
+          "points": 9,
+          "rebounds": 4,
+          "assists": 2,
+          "minutes": 20.2
+        }
+      ],
+      "ppg": 9.0,
+      "rpg": 4.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "011226",
+      "player_name": "DIALLO, ALPHA",
+      "team": "AS Monaco",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 8,
+      "total_rebounds": 7,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-30T19:30:00",
+          "opponent": "Virtus Bologna",
+          "points": 8,
+          "rebounds": 7,
+          "assists": 1,
+          "minutes": 26.1
+        }
+      ],
+      "ppg": 8.0,
+      "rpg": 7.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "007831",
+      "player_name": "SHIELDS, SHAVON",
+      "team": "EA7 Emporio Armani Milan",
+      "nationality": "Denmark",
+      "games_played": 1,
+      "total_points": 8,
+      "total_rebounds": 4,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-29T20:30:00",
+          "opponent": "Partizan Mozzart Bet Belgrade",
+          "points": 8,
+          "rebounds": 4,
+          "assists": 2,
+          "minutes": 28.7
+        }
+      ],
+      "ppg": 8.0,
+      "rpg": 4.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "012610",
+      "player_name": "WARD, TYSON",
+      "team": "Olympiacos Piraeus",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 8,
+      "total_rebounds": 5,
+      "total_assists": 5,
+      "performances": [
+        {
+          "date": "2026-01-29T20:15:00",
+          "opponent": "FC Barcelona",
+          "points": 8,
+          "rebounds": 5,
+          "assists": 5,
+          "minutes": 22.6
+        }
+      ],
+      "ppg": 8.0,
+      "rpg": 5.0,
+      "apg": 5.0
+    },
+    {
+      "player_code": "013290",
+      "player_name": "JESSUP, JUSTINIAN",
+      "team": "FC Bayern Munich",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 8,
+      "total_rebounds": 1,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T20:05:00",
+          "opponent": "Hapoel IBI Tel Aviv",
+          "points": 8,
+          "rebounds": 1,
+          "assists": 0,
+          "minutes": 20.9
+        }
+      ],
+      "ppg": 8.0,
+      "rpg": 1.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "009863",
+      "player_name": "BALDWIN IV, WADE",
+      "team": "Fenerbahce Beko Istanbul",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 8,
+      "total_rebounds": 2,
+      "total_assists": 9,
+      "performances": [
+        {
+          "date": "2026-01-29T18:45:00",
+          "opponent": "Anadolu Efes Istanbul",
+          "points": 8,
+          "rebounds": 2,
+          "assists": 9,
+          "minutes": 21.8
+        }
+      ],
+      "ppg": 8.0,
+      "rpg": 2.0,
+      "apg": 9.0
+    },
+    {
+      "player_code": "013381",
+      "player_name": "RAYMAN, WILLIAM",
+      "team": "Maccabi Rapyd Tel Aviv",
+      "nationality": "Israel",
+      "games_played": 1,
+      "total_points": 7,
+      "total_rebounds": 4,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T20:45:00",
+          "opponent": "Valencia Basket",
+          "points": 7,
+          "rebounds": 4,
+          "assists": 0,
+          "minutes": 14.1
+        }
+      ],
+      "ppg": 7.0,
+      "rpg": 4.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "013402",
+      "player_name": "BLAKENEY, ANTONIO",
+      "team": "Hapoel IBI Tel Aviv",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 7,
+      "total_rebounds": 2,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-29T20:05:00",
+          "opponent": "FC Bayern Munich",
+          "points": 7,
+          "rebounds": 2,
+          "assists": 1,
+          "minutes": 26.2
+        }
+      ],
+      "ppg": 7.0,
+      "rpg": 2.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "010568",
+      "player_name": "JONES, CHRIS",
+      "team": "Hapoel IBI Tel Aviv",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 7,
+      "total_rebounds": 1,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-29T20:05:00",
+          "opponent": "FC Bayern Munich",
+          "points": 7,
+          "rebounds": 1,
+          "assists": 1,
+          "minutes": 24.6
+        }
+      ],
+      "ppg": 7.0,
+      "rpg": 1.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "014009",
+      "player_name": "STEVENS, LAMAR",
+      "team": "Paris Basketball",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 7,
+      "total_rebounds": 4,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-27T21:00:00",
+          "opponent": "Real Madrid",
+          "points": 7,
+          "rebounds": 4,
+          "assists": 0,
+          "minutes": 23.2
+        }
+      ],
+      "ppg": 7.0,
+      "rpg": 4.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "014006",
+      "player_name": "OKEKE, CHUMA",
+      "team": "Real Madrid",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 6,
+      "total_rebounds": 1,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-27T21:00:00",
+          "opponent": "Paris Basketball",
+          "points": 6,
+          "rebounds": 1,
+          "assists": 1,
+          "minutes": 15.7
+        }
+      ],
+      "ppg": 6.0,
+      "rpg": 1.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "007853",
+      "player_name": "MCKISSIC, SHAQUIELLE",
+      "team": "Olympiacos Piraeus",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 5,
+      "total_rebounds": 0,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T20:15:00",
+          "opponent": "FC Barcelona",
+          "points": 5,
+          "rebounds": 0,
+          "assists": 0,
+          "minutes": 11.5
+        }
+      ],
+      "ppg": 5.0,
+      "rpg": 0.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "009035",
+      "player_name": "BOLOMBOY, JOEL",
+      "team": "Crvena Zvezda Meridianbet Belgrade",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 4,
+      "total_rebounds": 7,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-30T20:00:00",
+          "opponent": "Dubai Basketball",
+          "points": 4,
+          "rebounds": 7,
+          "assists": 1,
+          "minutes": 18.4
+        }
+      ],
+      "ppg": 4.0,
+      "rpg": 7.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "012738",
+      "player_name": "REUVERS, NATHAN",
+      "team": "Valencia Basket",
+      "nationality": "Hungary",
+      "games_played": 1,
+      "total_points": 4,
+      "total_rebounds": 1,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T20:45:00",
+          "opponent": "Maccabi Rapyd Tel Aviv",
+          "points": 4,
+          "rebounds": 1,
+          "assists": 0,
+          "minutes": 17.2
+        }
+      ],
+      "ppg": 4.0,
+      "rpg": 1.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "011823",
+      "player_name": "ODIASE, TAI",
+      "team": "Hapoel IBI Tel Aviv",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 4,
+      "total_rebounds": 2,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T20:05:00",
+          "opponent": "FC Bayern Munich",
+          "points": 4,
+          "rebounds": 2,
+          "assists": 0,
+          "minutes": 9.0
+        }
+      ],
+      "ppg": 4.0,
+      "rpg": 2.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "013383",
+      "player_name": "GABRIEL, WENYEN",
+      "team": "FC Bayern Munich",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 4,
+      "total_rebounds": 5,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-29T20:05:00",
+          "opponent": "Hapoel IBI Tel Aviv",
+          "points": 4,
+          "rebounds": 5,
+          "assists": 2,
+          "minutes": 18.6
+        }
+      ],
+      "ppg": 4.0,
+      "rpg": 5.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "012515",
+      "player_name": "TARPEY, TERRY",
+      "team": "AS Monaco",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 3,
+      "total_rebounds": 0,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-30T19:30:00",
+          "opponent": "Virtus Bologna",
+          "points": 3,
+          "rebounds": 0,
+          "assists": 0,
+          "minutes": 3.7
+        }
+      ],
+      "ppg": 3.0,
+      "rpg": 0.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "007056",
+      "player_name": "BOOKER, DEVIN",
+      "team": "EA7 Emporio Armani Milan",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 3,
+      "total_rebounds": 1,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-29T20:30:00",
+          "opponent": "Partizan Mozzart Bet Belgrade",
+          "points": 3,
+          "rebounds": 1,
+          "assists": 1,
+          "minutes": 14.6
+        }
+      ],
+      "ppg": 3.0,
+      "rpg": 1.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "008855",
+      "player_name": "WALKUP, THOMAS",
+      "team": "Olympiacos Piraeus",
+      "nationality": "Greece",
+      "games_played": 1,
+      "total_points": 3,
+      "total_rebounds": 1,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-29T20:15:00",
+          "opponent": "FC Barcelona",
+          "points": 3,
+          "rebounds": 1,
+          "assists": 2,
+          "minutes": 22.4
+        }
+      ],
+      "ppg": 3.0,
+      "rpg": 1.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "014134",
+      "player_name": "NORRIS, MILES",
+      "team": "FC Barcelona",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 3,
+      "total_rebounds": 1,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T20:15:00",
+          "opponent": "Olympiacos Piraeus",
+          "points": 3,
+          "rebounds": 1,
+          "assists": 0,
+          "minutes": 12.8
+        }
+      ],
+      "ppg": 3.0,
+      "rpg": 1.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "012609",
+      "player_name": "MALCOLM, COLLIN",
+      "team": "Hapoel IBI Tel Aviv",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 3,
+      "total_rebounds": 7,
+      "total_assists": 3,
+      "performances": [
+        {
+          "date": "2026-01-29T20:05:00",
+          "opponent": "FC Bayern Munich",
+          "points": 3,
+          "rebounds": 7,
+          "assists": 3,
+          "minutes": 31.4
+        }
+      ],
+      "ppg": 3.0,
+      "rpg": 7.0,
+      "apg": 3.0
+    },
+    {
+      "player_code": "014015",
+      "player_name": "BACOT JR., ARMANDO",
+      "team": "Fenerbahce Beko Istanbul",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 3,
+      "total_rebounds": 3,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-29T18:45:00",
+          "opponent": "Anadolu Efes Istanbul",
+          "points": 3,
+          "rebounds": 3,
+          "assists": 1,
+          "minutes": 10.1
+        }
+      ],
+      "ppg": 3.0,
+      "rpg": 3.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "011284",
+      "player_name": "FARIED, KENNETH",
+      "team": "Panathinaikos AKTOR Athens",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 2,
+      "total_rebounds": 3,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-30T20:45:00",
+          "opponent": "LDLC ASVEL Villeurbanne",
+          "points": 2,
+          "rebounds": 3,
+          "assists": 0,
+          "minutes": 7.6
+        }
+      ],
+      "ppg": 2.0,
+      "rpg": 3.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "012608",
+      "player_name": "SHORTS, TJ",
+      "team": "Panathinaikos AKTOR Athens",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 2,
+      "total_rebounds": 2,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-30T20:45:00",
+          "opponent": "LDLC ASVEL Villeurbanne",
+          "points": 2,
+          "rebounds": 2,
+          "assists": 2,
+          "minutes": 11.2
+        }
+      ],
+      "ppg": 2.0,
+      "rpg": 2.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "011982",
+      "player_name": "OJELEYE, SEMI",
+      "team": "Crvena Zvezda Meridianbet Belgrade",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 2,
+      "total_rebounds": 1,
+      "total_assists": 2,
+      "performances": [
+        {
+          "date": "2026-01-30T20:00:00",
+          "opponent": "Dubai Basketball",
+          "points": 2,
+          "rebounds": 1,
+          "assists": 2,
+          "minutes": 20.3
+        }
+      ],
+      "ppg": 2.0,
+      "rpg": 1.0,
+      "apg": 2.0
+    },
+    {
+      "player_code": "011078",
+      "player_name": "THOMPSON, DARIUS",
+      "team": "Valencia Basket",
+      "nationality": "Italy",
+      "games_played": 1,
+      "total_points": 2,
+      "total_rebounds": 0,
+      "total_assists": 3,
+      "performances": [
+        {
+          "date": "2026-01-29T20:45:00",
+          "opponent": "Maccabi Rapyd Tel Aviv",
+          "points": 2,
+          "rebounds": 0,
+          "assists": 3,
+          "minutes": 14.6
+        }
+      ],
+      "ppg": 2.0,
+      "rpg": 0.0,
+      "apg": 3.0
+    },
+    {
+      "player_code": "001932",
+      "player_name": "CALATHES, NICK",
+      "team": "Partizan Mozzart Bet Belgrade",
+      "nationality": "Greece",
+      "games_played": 1,
+      "total_points": 2,
+      "total_rebounds": 3,
+      "total_assists": 7,
+      "performances": [
+        {
+          "date": "2026-01-29T20:30:00",
+          "opponent": "EA7 Emporio Armani Milan",
+          "points": 2,
+          "rebounds": 3,
+          "assists": 7,
+          "minutes": 22.9
+        }
+      ],
+      "ppg": 2.0,
+      "rpg": 3.0,
+      "apg": 7.0
+    },
+    {
+      "player_code": "008829",
+      "player_name": "PETERS, ALEC",
+      "team": "Olympiacos Piraeus",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 2,
+      "total_rebounds": 1,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T20:15:00",
+          "opponent": "FC Barcelona",
+          "points": 2,
+          "rebounds": 1,
+          "assists": 0,
+          "minutes": 5.8
+        }
+      ],
+      "ppg": 2.0,
+      "rpg": 1.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "014102",
+      "player_name": "JONES, KAI",
+      "team": "Anadolu Efes Istanbul",
+      "nationality": "Bahamas",
+      "games_played": 1,
+      "total_points": 2,
+      "total_rebounds": 1,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-29T18:45:00",
+          "opponent": "Fenerbahce Beko Istanbul",
+          "points": 2,
+          "rebounds": 1,
+          "assists": 1,
+          "minutes": 17.0
+        }
+      ],
+      "ppg": 2.0,
+      "rpg": 1.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "010391",
+      "player_name": "WEILER-BABB, NICK",
+      "team": "Anadolu Efes Istanbul",
+      "nationality": "Germany",
+      "games_played": 1,
+      "total_points": 2,
+      "total_rebounds": 0,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-29T18:45:00",
+          "opponent": "Fenerbahce Beko Istanbul",
+          "points": 2,
+          "rebounds": 0,
+          "assists": 1,
+          "minutes": 15.8
+        }
+      ],
+      "ppg": 2.0,
+      "rpg": 0.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "010431",
+      "player_name": "MORGAN, JEREMY",
+      "team": "Paris Basketball",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 2,
+      "total_rebounds": 4,
+      "total_assists": 3,
+      "performances": [
+        {
+          "date": "2026-01-27T21:00:00",
+          "opponent": "Real Madrid",
+          "points": 2,
+          "rebounds": 4,
+          "assists": 3,
+          "minutes": 16.4
+        }
+      ],
+      "ppg": 2.0,
+      "rpg": 4.0,
+      "apg": 3.0
+    },
+    {
+      "player_code": "013371",
+      "player_name": "HARRISON, SHAQUILLE",
+      "team": "LDLC ASVEL Villeurbanne",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 0,
+      "total_rebounds": 2,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-30T20:45:00",
+          "opponent": "Panathinaikos AKTOR Athens",
+          "points": 0,
+          "rebounds": 2,
+          "assists": 1,
+          "minutes": 13.0
+        }
+      ],
+      "ppg": 0.0,
+      "rpg": 2.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "003526",
+      "player_name": "LIGHTY, DAVID",
+      "team": "LDLC ASVEL Villeurbanne",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 0,
+      "total_rebounds": 3,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-30T20:45:00",
+          "opponent": "Panathinaikos AKTOR Athens",
+          "points": 0,
+          "rebounds": 3,
+          "assists": 0,
+          "minutes": 15.2
+        }
+      ],
+      "ppg": 0.0,
+      "rpg": 3.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "014013",
+      "player_name": "WATSON, GLYNN",
+      "team": "LDLC ASVEL Villeurbanne",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 0,
+      "total_rebounds": 1,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-30T20:45:00",
+          "opponent": "Panathinaikos AKTOR Athens",
+          "points": 0,
+          "rebounds": 1,
+          "assists": 1,
+          "minutes": 17.8
+        }
+      ],
+      "ppg": 0.0,
+      "rpg": 1.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "012795",
+      "player_name": "ANDERSON, JUSTIN",
+      "team": "Dubai Basketball",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 0,
+      "total_rebounds": 2,
+      "total_assists": 3,
+      "performances": [
+        {
+          "date": "2026-01-30T20:00:00",
+          "opponent": "Crvena Zvezda Meridianbet Belgrade",
+          "points": 0,
+          "rebounds": 2,
+          "assists": 3,
+          "minutes": 22.6
+        }
+      ],
+      "ppg": 0.0,
+      "rpg": 2.0,
+      "apg": 3.0
+    },
+    {
+      "player_code": "010390",
+      "player_name": "HAYES, KEVARRIUS",
+      "team": "AS Monaco",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 0,
+      "total_rebounds": 3,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-30T19:30:00",
+          "opponent": "Virtus Bologna",
+          "points": 0,
+          "rebounds": 3,
+          "assists": 0,
+          "minutes": 11.7
+        }
+      ],
+      "ppg": 0.0,
+      "rpg": 3.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "014168",
+      "player_name": "KEY, BRAXTON",
+      "team": "Valencia Basket",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 0,
+      "total_rebounds": 1,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T20:45:00",
+          "opponent": "Maccabi Rapyd Tel Aviv",
+          "points": 0,
+          "rebounds": 1,
+          "assists": 0,
+          "minutes": 10.1
+        }
+      ],
+      "ppg": 0.0,
+      "rpg": 1.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "014123",
+      "player_name": "DOWTIN JR, JEFFREY",
+      "team": "Maccabi Rapyd Tel Aviv",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 0,
+      "total_rebounds": 1,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-29T20:45:00",
+          "opponent": "Valencia Basket",
+          "points": 0,
+          "rebounds": 1,
+          "assists": 1,
+          "minutes": 5.4
+        }
+      ],
+      "ppg": 0.0,
+      "rpg": 1.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "003048",
+      "player_name": "DUNSTON, BRYANT",
+      "team": "EA7 Emporio Armani Milan",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 0,
+      "total_rebounds": 0,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T20:30:00",
+          "opponent": "Partizan Mozzart Bet Belgrade",
+          "points": 0,
+          "rebounds": 0,
+          "assists": 0,
+          "minutes": 0
+        }
+      ],
+      "ppg": 0.0,
+      "rpg": 0.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "012745",
+      "player_name": "PARKER, JABARI",
+      "team": "Partizan Mozzart Bet Belgrade",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 0,
+      "total_rebounds": 0,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T20:30:00",
+          "opponent": "EA7 Emporio Armani Milan",
+          "points": 0,
+          "rebounds": 0,
+          "assists": 0,
+          "minutes": 0
+        }
+      ],
+      "ppg": 0.0,
+      "rpg": 0.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "011196",
+      "player_name": "HALL, DONTA",
+      "team": "Olympiacos Piraeus",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 0,
+      "total_rebounds": 0,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T20:15:00",
+          "opponent": "FC Barcelona",
+          "points": 0,
+          "rebounds": 0,
+          "assists": 0,
+          "minutes": 0
+        }
+      ],
+      "ppg": 0.0,
+      "rpg": 0.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "013284",
+      "player_name": "WAINRIGHT, ISH",
+      "team": "Hapoel IBI Tel Aviv",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 0,
+      "total_rebounds": 5,
+      "total_assists": 1,
+      "performances": [
+        {
+          "date": "2026-01-29T20:05:00",
+          "opponent": "FC Bayern Munich",
+          "points": 0,
+          "rebounds": 5,
+          "assists": 1,
+          "minutes": 22.2
+        }
+      ],
+      "ppg": 0.0,
+      "rpg": 5.0,
+      "apg": 1.0
+    },
+    {
+      "player_code": "014016",
+      "player_name": "BOSTON JR., BRANDON",
+      "team": "Fenerbahce Beko Istanbul",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 0,
+      "total_rebounds": 0,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T18:45:00",
+          "opponent": "Anadolu Efes Istanbul",
+          "points": 0,
+          "rebounds": 0,
+          "assists": 0,
+          "minutes": 0
+        }
+      ],
+      "ppg": 0.0,
+      "rpg": 0.0,
+      "apg": 0.0
+    },
+    {
+      "player_code": "009783",
+      "player_name": "COLSON, BONZIE",
+      "team": "Fenerbahce Beko Istanbul",
+      "nationality": "United States of America",
+      "games_played": 1,
+      "total_points": 0,
+      "total_rebounds": 5,
+      "total_assists": 0,
+      "performances": [
+        {
+          "date": "2026-01-29T18:45:00",
+          "opponent": "Anadolu Efes Istanbul",
+          "points": 0,
+          "rebounds": 5,
+          "assists": 0,
+          "minutes": 18.1
+        }
+      ],
+      "ppg": 0.0,
+      "rpg": 5.0,
+      "apg": 0.0
+    }
+  ]
+}

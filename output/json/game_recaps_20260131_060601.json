@@ -1,0 +1,318 @@
+{
+  "export_date": "2026-01-31T06:06:19.918262",
+  "season": "E2025",
+  "mode": "recent",
+  "game_count": 10,
+  "games": [
+    {
+      "game_code": 250,
+      "date": "2026-01-30T20:45:00",
+      "round": 25,
+      "phase": "Regular Season",
+      "local": {
+        "team": "LDLC ASVEL Villeurbanne",
+        "score": 78,
+        "quarters": {
+          "partials1": 17,
+          "partials2": 12,
+          "partials3": 17,
+          "partials4": 32,
+          "extraPeriods": {}
+        }
+      },
+      "road": {
+        "team": "Panathinaikos AKTOR Athens",
+        "score": 79,
+        "quarters": {
+          "partials1": 15,
+          "partials2": 20,
+          "partials3": 20,
+          "partials4": 24,
+          "extraPeriods": {}
+        }
+      },
+      "winner": null,
+      "venue": "LDLC ARENA",
+      "american_players_count": 8
+    },
+    {
+      "game_code": 248,
+      "date": "2026-01-30T20:30:00",
+      "round": 25,
+      "phase": "Regular Season",
+      "local": {
+        "team": "Kosner Baskonia Vitoria-Gasteiz",
+        "score": 102,
+        "quarters": {
+          "partials1": 19,
+          "partials2": 27,
+          "partials3": 29,
+          "partials4": 27,
+          "extraPeriods": {}
+        }
+      },
+      "road": {
+        "team": "Zalgiris Kaunas",
+        "score": 91,
+        "quarters": {
+          "partials1": 23,
+          "partials2": 22,
+          "partials3": 26,
+          "partials4": 20,
+          "extraPeriods": {}
+        }
+      },
+      "winner": null,
+      "venue": "BUESA ARENA",
+      "american_players_count": 5
+    },
+    {
+      "game_code": 249,
+      "date": "2026-01-30T20:00:00",
+      "round": 25,
+      "phase": "Regular Season",
+      "local": {
+        "team": "Crvena Zvezda Meridianbet Belgrade",
+        "score": 95,
+        "quarters": {
+          "partials1": 34,
+          "partials2": 10,
+          "partials3": 24,
+          "partials4": 27,
+          "extraPeriods": {}
+        }
+      },
+      "road": {
+        "team": "Dubai Basketball",
+        "score": 92,
+        "quarters": {
+          "partials1": 14,
+          "partials2": 27,
+          "partials3": 20,
+          "partials4": 31,
+          "extraPeriods": {}
+        }
+      },
+      "winner": null,
+      "venue": "BELGRADE ARENA",
+      "american_players_count": 8
+    },
+    {
+      "game_code": 247,
+      "date": "2026-01-30T19:30:00",
+      "round": 25,
+      "phase": "Regular Season",
+      "local": {
+        "team": "AS Monaco",
+        "score": 82,
+        "quarters": {
+          "partials1": 30,
+          "partials2": 21,
+          "partials3": 14,
+          "partials4": 17,
+          "extraPeriods": {}
+        }
+      },
+      "road": {
+        "team": "Virtus Bologna",
+        "score": 84,
+        "quarters": {
+          "partials1": 22,
+          "partials2": 22,
+          "partials3": 18,
+          "partials4": 22,
+          "extraPeriods": {}
+        }
+      },
+      "winner": null,
+      "venue": "SALLE GASTON MEDECIN",
+      "american_players_count": 7
+    },
+    {
+      "game_code": 245,
+      "date": "2026-01-29T20:45:00",
+      "round": 25,
+      "phase": "Regular Season",
+      "local": {
+        "team": "Valencia Basket",
+        "score": 94,
+        "quarters": {
+          "partials1": 21,
+          "partials2": 23,
+          "partials3": 22,
+          "partials4": 28,
+          "extraPeriods": {}
+        }
+      },
+      "road": {
+        "team": "Maccabi Rapyd Tel Aviv",
+        "score": 83,
+        "quarters": {
+          "partials1": 27,
+          "partials2": 23,
+          "partials3": 18,
+          "partials4": 15,
+          "extraPeriods": {}
+        }
+      },
+      "winner": null,
+      "venue": "ROIG ARENA",
+      "american_players_count": 10
+    },
+    {
+      "game_code": 246,
+      "date": "2026-01-29T20:30:00",
+      "round": 25,
+      "phase": "Regular Season",
+      "local": {
+        "team": "EA7 Emporio Armani Milan",
+        "score": 85,
+        "quarters": {
+          "partials1": 25,
+          "partials2": 27,
+          "partials3": 17,
+          "partials4": 16,
+          "extraPeriods": {}
+        }
+      },
+      "road": {
+        "team": "Partizan Mozzart Bet Belgrade",
+        "score": 79,
+        "quarters": {
+          "partials1": 22,
+          "partials2": 21,
+          "partials3": 14,
+          "partials4": 22,
+          "extraPeriods": {}
+        }
+      },
+      "winner": null,
+      "venue": "ALLIANZ CLOUD",
+      "american_players_count": 11
+    },
+    {
+      "game_code": 244,
+      "date": "2026-01-29T20:15:00",
+      "round": 25,
+      "phase": "Regular Season",
+      "local": {
+        "team": "Olympiacos Piraeus",
+        "score": 87,
+        "quarters": {
+          "partials1": 27,
+          "partials2": 19,
+          "partials3": 13,
+          "partials4": 28,
+          "extraPeriods": {}
+        }
+      },
+      "road": {
+        "team": "FC Barcelona",
+        "score": 75,
+        "quarters": {
+          "partials1": 13,
+          "partials2": 24,
+          "partials3": 27,
+          "partials4": 11,
+          "extraPeriods": {}
+        }
+      },
+      "winner": null,
+      "venue": "PEACE AND FRIENDSHIP STADIUM",
+      "american_players_count": 10
+    },
+    {
+      "game_code": 243,
+      "date": "2026-01-29T20:05:00",
+      "round": 25,
+      "phase": "Regular Season",
+      "local": {
+        "team": "Hapoel IBI Tel Aviv",
+        "score": 64,
+        "quarters": {
+          "partials1": 26,
+          "partials2": 13,
+          "partials3": 11,
+          "partials4": 14,
+          "extraPeriods": {}
+        }
+      },
+      "road": {
+        "team": "FC Bayern Munich",
+        "score": 79,
+        "quarters": {
+          "partials1": 23,
+          "partials2": 20,
+          "partials3": 18,
+          "partials4": 18,
+          "extraPeriods": {}
+        }
+      },
+      "winner": null,
+      "venue": "MENORA MIVTACHIM ARENA",
+      "american_players_count": 9
+    },
+    {
+      "game_code": 242,
+      "date": "2026-01-29T18:45:00",
+      "round": 25,
+      "phase": "Regular Season",
+      "local": {
+        "team": "Fenerbahce Beko Istanbul",
+        "score": 79,
+        "quarters": {
+          "partials1": 25,
+          "partials2": 14,
+          "partials3": 22,
+          "partials4": 18,
+          "extraPeriods": {}
+        }
+      },
+      "road": {
+        "team": "Anadolu Efes Istanbul",
+        "score": 62,
+        "quarters": {
+          "partials1": 8,
+          "partials2": 17,
+          "partials3": 14,
+          "partials4": 23,
+          "extraPeriods": {}
+        }
+      },
+      "winner": null,
+      "venue": "ULKER SPORTS AND EVENT HALL",
+      "american_players_count": 10
+    },
+    {
+      "game_code": 241,
+      "date": "2026-01-27T21:00:00",
+      "round": 25,
+      "phase": "Regular Season",
+      "local": {
+        "team": "Paris Basketball",
+        "score": 98,
+        "quarters": {
+          "partials1": 24,
+          "partials2": 26,
+          "partials3": 25,
+          "partials4": 23,
+          "extraPeriods": {}
+        }
+      },
+      "road": {
+        "team": "Real Madrid",
+        "score": 92,
+        "quarters": {
+          "partials1": 18,
+          "partials2": 24,
+          "partials3": 24,
+          "partials4": 26,
+          "extraPeriods": {}
+        }
+      },
+      "winner": null,
+      "venue": "ADIDAS ARENA",
+      "american_players_count": 5
+    }
+  ]
+}
